@@ -55,4 +55,9 @@ with gr.Blocks() as demo:
         outputs=[srt_output],
     )
 
-demo.launch()
+demo.launch(
+    share=False,
+    server_name="0.0.0.0",
+    server_port=80,
+    debug=False
+)
